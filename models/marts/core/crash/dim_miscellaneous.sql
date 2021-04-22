@@ -8,7 +8,7 @@ with miscellaneous as (
 
 )
 select
-        {{ dbt_utils.surrogate_key('CONTRIBUTING_FACTOR_VEHICLE_1', 'NUMBER_OF_PERSONS_INJURED') }} as surrogate_key,
+        {{ dbt_utils.surrogate_key('CONTRIBUTING_FACTOR_VEHICLE_1', 'NUMBER_OF_PERSONS_INJURED') }} as MiscID,
         miscellaneous.CONTRIBUTING_FACTOR_VEHICLE_1,
         miscellaneous.NUMBER_OF_PERSONS_INJURED,
     FROM miscellaneous
